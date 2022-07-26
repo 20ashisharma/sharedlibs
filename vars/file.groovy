@@ -10,7 +10,7 @@ def checkOutFrom() {
 def login() {
     withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: '7078555411', passwordVariable: 'Ashi1234#')]) {
         sh """
-            docker login --username="${7078555411}" --password="${Ashi1234#}"
+            docker login --username="${7078555411}" --password="${Ashi1234}"
         """
     }
 }
